@@ -21,3 +21,8 @@ sendInput.addEventListener('keypress ', function(e) {
         itemList.append(newItem);
     }
 });
+
+function toggleItem(event) {
+    const newItem = event.target;
+    newItem.classList.toggle('completed');
+}
